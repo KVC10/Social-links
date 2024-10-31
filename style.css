@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Young+Serif&display=swap");
+
+:root {
+  /* colors */
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+
+  /* fonts */
+
+  --font-size: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+p {
+  font-size: var(--font-size);
+}
+body {
+  background-color: var(--Grey-900);
+  color: var(--White);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: var(--Grey-800);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+img {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 2rem;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.name {
+  margin-bottom: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.location {
+  color: var(--Green);
+  margin-bottom: 1.5rem;
+}
+
+.occupation {
+  font-weight: 200;
+  color: rgba(225, 225, 225, 0.8);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  margin-top: 1.5rem;
+}
+
+.link {
+  padding-block: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Grey-700);
+  cursor: pointer;
+  outline: none;
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--White);
+  font-size: var(--font-size);
+  font-weight: 750;
+  letter-spacing: 0.9px;
+}
+
+.link:hover,
+.link:focus-within {
+  background-color: var(--Green);
+}
+.link:hover a,
+.link:focus-within a {
+  color: var(--Grey-900);
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    padding-block: 100px;
+  }
+  .container {
+    min-width: 90%;
+  }
+}
