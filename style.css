@@ -48,8 +48,8 @@ body {
 img {
   margin: 0 auto;
   border-radius: 50%;
-  width: 100px;
-  margin-bottom: 2rem;
+  width: 90px;
+  margin-bottom: 1.8rem;
 }
 
 h1,
@@ -58,8 +58,9 @@ p {
 }
 
 .name {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
   letter-spacing: 2px;
+  font-size: 1.3rem;
 }
 
 .location {
@@ -70,6 +71,8 @@ p {
 .occupation {
   font-weight: 200;
   color: rgba(225, 225, 225, 0.8);
+  margin: 0 auto;
+  padding-inline: 1.1rem;
 }
 
 .social-links {
@@ -106,10 +109,7 @@ p {
   color: var(--Grey-900);
 }
 
-@media screen and (max-width: 450px) {
-  body {
-    padding-block: 100px;
-  }
+@media screen and (max-width: 430px) {
   .container {
     min-width: 90%;
   }
