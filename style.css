@@ -20,9 +20,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-img {
-  display: block;
-}
+
 p {
   font-size: var(--font-size);
 }
@@ -46,6 +44,7 @@ body {
 }
 
 img {
+  display: block;
   margin: 0 auto;
   border-radius: 50%;
   width: 90px;
@@ -60,12 +59,13 @@ p {
 .name {
   margin-bottom: 0.6rem;
   letter-spacing: 2px;
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
 }
 
 .location {
   color: var(--Green);
   margin-bottom: 1.5rem;
+  font-size: clamp(0.78rem, 2vw, 0.9rem);
 }
 
 .occupation {
@@ -73,6 +73,7 @@ p {
   color: rgba(225, 225, 225, 0.8);
   margin: 0 auto;
   padding-inline: 1.1rem;
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
 .social-links {
@@ -109,8 +110,14 @@ p {
   color: var(--Grey-900);
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 400px) {
   .container {
-    min-width: 90%;
+    width: 90%;
+  }
+  .occupation {
+    padding: 0;
+  }
+  img {
+    width: 75px;
   }
 }
